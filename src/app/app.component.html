@@ -1,0 +1,263 @@
+<!-- <div class="container my-5 p-3 p-lg-5">
+  <div class="digit-form-container bg-light d-flex">
+    <div class="d-flex flex-wrap w-100 flex-column">
+      <div class="d-flex justify-content-center">
+        <img
+          src="/assets/images/padlock.svg"
+          alt="padlock"
+          class="padlock-icon mb-3"
+        />
+      </div>
+
+      <h1 class="digit-form-heading text-center mb-4 pb-2">
+        Setup Two-Factor Authentication
+      </h1>
+      <h2 class="digit-form-sub-heading text-center mb-4 pb-2">
+        Create a unique 4-digit pin to setup Two-Factor authentication
+      </h2>
+
+      <form class="pin-form">
+        <div class="w-100 mb-3">
+          <div class="col-sm-12 mb-3 d-flex flex-column align-items-end">
+            <div class="pin-area mb-5">
+              <div class="mb-3">
+                <label class="pin-label">Enter PIN</label>
+              </div>
+
+              <div class="text-center pincode-form w-100">
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+              </div>
+            </div>
+
+            <div class="pin-area mb-5">
+              <div class="mb-3">
+                <label class="pin-label">Re-enter PIN to confirm</label>
+              </div>
+              <div class="text-center pincode-form w-100">
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+                <input
+                  type="  number"
+                  class="pincode form-control text-center"
+                  maxlength="1"
+                  appNumberOnlyInput
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              col-sm-12
+              mb-3
+              d-flex
+              flex-column
+              align-items-center
+              btn-default-action
+              pb-2
+              mb-lg-0
+              pb-lg-0
+            "
+          >
+            <button
+              type="submit"
+              mat-raised-button=""
+              color="primary"
+              class="
+                submit-btn
+                mat-focus-indicator
+                btn-default-action
+                text-center
+                mat-raised-button mat-button-base mat-primary
+              "
+            >
+              <span class="mat-button-wrapper"> Submit </span>
+              <span matripple="" class="mat-ripple mat-button-ripple"> </span
+              ><span class="mat-button-focus-overlay"></span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<!-- <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+      <span>Password</span>
+      <ng-container formArrayName="password">
+        <ng-container *ngFor="let item of passwordInputs.controls; let i = index">
+          <ng-container [formGroup]="$any(item)">
+            <input maxlength="1" type="password" formControlName="{{i}}" class="form-control" />
+          </ng-container>
+        </ng-container>
+      </ng-container>
+  </div>
+
+  <div class="form-group">
+    <span>Confirm-Password</span>
+    <ng-container formArrayName="confirmPassword">
+      <ng-container *ngFor="let item of confirmPasswordInputs.controls; let i = index">
+        <div [formGroup]="$any(item)">
+          <input maxlength="1" type="password" formControlName="{{i}}" class="form-control" />
+        </div>
+      </ng-container>
+    </ng-container>
+</div> -->
+
+<!-- <div class="form-group">
+    <span>Confirm Password</span>
+      <input type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && rf.confirmPassword.errors }" />
+      <div *ngIf="submitted && rf.confirmPassword.errors" class="invalid-feedback">
+          <div *ngIf="rf.confirmPassword.errors.required">Confirm Password is required</div>
+          <div *ngIf="rf.confirmPassword.errors.mustMatch">Passwords must match</div>
+      </div>
+  </div> -->
+
+<!-- <br>
+  {{registerForm.value | json}}
+
+  <div class="form-group">
+      <button class="btn btn-primary " [disabled]="registerForm.invalid">Register</button>
+  </div>
+
+</form> -->
+
+<!-- <div class="container my-5 p-3 p-lg-5">
+  <div class="digit-form-container bg-white d-flex">
+    <div class="d-flex flex-wrap w-100 flex-column">
+      <div class="d-flex justify-content-center">
+        <img src="/assets/images/padlock.svg" alt="padlock" class="padlock-icon mb-3" />
+      </div>
+
+      <h1 class="digit-form-heading text-center mb-4 pb-2">Setup Two-Factor Authentication</h1>
+      <h2 class="digit-form-sub-heading text-center mb-4 pb-2">
+        Create a unique 4-digit pin to setup Two-Factor authentication
+      </h2>
+
+      <form [formGroup]="pinForm" class="pin-form">
+        <div class="w-100 mb-3">
+          <div class="col-sm-12 mb-3 d-flex flex-column align-items-end">
+            <div class="pin-area mb-5">
+              <div class="mb-3">
+                <label class="pin-label">Enter PIN</label>
+              </div>
+
+              <div class="text-center pincode-form w-100">
+                <ng-container formArrayName="pins">
+                  <ng-container *ngFor="let item of pinsInputs.controls; let i = index">
+                    <ng-container [formGroup]="$any(item)">
+                      <input  type="tel" formControlName="{{i}}" class="pincode form-control text-center" appNumberOnlyInput />
+                    </ng-container>
+                  </ng-container>
+                </ng-container>
+              </div>
+            </div>
+
+            <div class="pin-area mb-5">
+              <div class="mb-3">
+                <label class="pin-label">Re-enter PIN to confirm</label>
+              </div>
+              <div class="text-center pincode-form w-100">
+                <ng-container formArrayName="confirmpins">
+                  <ng-container *ngFor="let item of confirmpinsInputs.controls; let i = index">
+                    <ng-container [formGroup]="$any(item)">
+                      <input type="tel" formControlName="{{i}}" class="pincode form-control text-center" appNumberOnlyInput />
+                    </ng-container>
+                  </ng-container>
+                </ng-container>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 mb-3 d-flex flex-column align-items-center btn-default-action pb-2 mb-lg-0 pb-lg-0">
+            <button
+              type="submit"
+              mat-raised-button=""
+              color="primary"
+              class="
+                submit-btn
+                mat-focus-indicator
+                btn-default-action
+                text-center
+                mat-raised-button mat-button-base mat-primary
+              "
+             [disabled]="pinForm.invalid"
+            >
+              <span class="mat-button-wrapper"> Submit </span>
+              <span matripple="" class="mat-ripple mat-button-ripple"> </span
+              ><span class="mat-button-focus-overlay"></span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="common_select_box">
+  <select
+    [(ngModel)]="selectedNav"
+    (change)="setNav(selectedNav)"
+    placeholder="Quantity"
+  >
+    <option *ngFor="let q of navs" [value]="q">{{ q }}</option>
+  </select>
+  <div *ngIf="regTypeSelectedOption === 'option 1'">option 1</div>
+  <div *ngIf="regTypeSelectedOption === 'option 2'">option 2</div>
+  <div *ngIf="regTypeSelectedOption === 'option 1'">option 3</div>
+</div> -->
+
+<!--  -->
+
+<!-- <app-catcherror></app-catcherror> -->
+<!-- <app-promises></app-promises> -->
+<!-- <app-callback></app-callback> -->
+
+<!-- <app-example-dialog></app-example-dialog> -->
+<!-- <app-angular-dynamic-components></app-angular-dynamic-components> -->
+<!-- <app-angular-material-table-inline-ops></app-angular-material-table-inline-ops> -->
+<!-- <app-angular-datatable></app-angular-datatable> -->
+
+<app-data-table></app-data-table>

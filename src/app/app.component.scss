@@ -1,0 +1,140 @@
+// :host {
+
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 100%;
+
+//   .digit-form-container {
+//     border-radius: 1.25rem;
+//     padding: 2.5rem 2rem;
+
+//     .padlock-icon {
+//       border-radius: 3.5rem;
+//     background-color: #00652b1a;
+//     padding: 2rem 0.5rem;
+//     }
+
+//     .digit-form-heading {
+//       font-size: 1.25rem;
+//       font-weight: 800;
+//       color: #2f2f2f;
+//     }
+
+//     .digit-form-sub-heading {
+//       font-size: 0.875rem;
+//       font-weight: 400;
+//       color: #6d6e72;
+//     }
+//   }
+
+//   .pin-form {
+//     display: flex;
+//     flex-wrap: wrap;
+
+//     .pin-area {
+//       // padding-left: 27rem;
+//       // padding: 2rem 0rem;
+//       // margin-left: 4rem;
+//     }
+
+//     .pin-label {
+//       font-size: 0.75rem;
+//       font-weight: 500;
+//       color: #041529;
+//       margin-left: 5rem;
+//     }
+
+//     .pincode-form{
+//       margin-left: 5rem;
+//     }
+
+//     .pincode {
+//       display: inline-block;
+//       float: left;
+//       width: 7.5%;
+//       color: #181819;
+//       border: 0;
+//       border-bottom: 1px solid #000000;
+//       border-radius: 2px 2px 0 0;
+//       margin-right: 0.5rem;
+//       padding: 0;
+//     }
+//   }
+
+//   .submit-btn {
+//     border-radius: 2.5rem;
+//     font-size: 0.875rem;
+//     padding: 0.5rem 3.5rem;
+//     background-color: #00652b;
+//   }
+
+//   @media only screen and (min-width: 240px) and (max-width: 319px) {
+
+//     .pin-area {
+//       padding-left: 0rem;
+//   }
+
+//   .pincode{
+//     width: 15% !important;
+//   }
+
+//   }
+
+//   @media only screen and (min-width: 320px) and (max-width: 359px) {
+
+//     .pin-area{
+//       padding: 0 !important;
+//       margin-left: 0rem !important;
+//       }
+
+//     .pincode{
+//       width: 17% !important;
+//     }
+
+//       .submit-btn{
+//         margin-left: 1rem;
+//       }
+
+//   }
+
+//   @media only screen and (min-width: 360px) and (max-width: 767px) {
+
+//     .pin-area{
+//     padding: 0 !important;
+//     margin-left: 1.5rem !important;
+//     }
+
+//     .pincode{
+//       width: 18% !important;
+//     }
+
+//     .submit-btn{
+//       margin-left: 4rem;
+//     }
+
+//   }
+
+//   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+//     .pin-area{
+//       padding: 0 !important;
+//       margin-left: 9rem !important;
+//       }
+
+//       .pincode{
+//         width: 15% !important;
+//       }
+
+//   }
+
+//   @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+//     .pin-area{
+//       padding: 0 !important;
+//       margin-left: 14rem !important;
+//       }
+
+//     .pincode{
+//       width: 14% !important;
+//     }
+//   }
+
+// }

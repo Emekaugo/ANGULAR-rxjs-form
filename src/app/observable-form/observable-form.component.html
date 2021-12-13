@@ -1,0 +1,148 @@
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label>Password</label>
+    <input
+      type="password"
+      formControlName="password"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.password.errors }"
+    />
+    <div *ngIf="submitted && rf.password.errors" class="invalid-feedback">
+      <div *ngIf="rf.password.errors.required">Password is required</div>
+      <div *ngIf="rf.password.errors.minlength">
+        Password must be at least 6 characters
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Confirm Password</label>
+    <input
+      type="password"
+      formControlName="confirmPassword"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.confirmPassword.errors }"
+    />
+    <div *ngIf="submitted && rf.confirmPassword.errors" class="invalid-feedback">
+      <div *ngIf="rf.confirmPassword.errors.required">
+        Confirm Password is required
+      </div>
+      <div *ngIf="rf.confirmPassword.errors.mustMatch">Passwords must match</div>
+    </div>
+  </div>
+
+
+
+
+  <div class="form-group">
+    <label>Password2</label>
+    <input
+      type="password"
+      formControlName="password2"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.password2.errors }"
+    />
+    <div *ngIf="submitted && rf.password2.errors" class="invalid-feedback">
+      <div *ngIf="rf.password2.errors.required">Password is required</div>
+      <div *ngIf="rf.password2.errors.minlength">
+        Password must be at least 6 characters
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Confirm Password2</label>
+    <input
+      type="password"
+      formControlName="confirmPassword2"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.confirmPassword2.errors }"
+    />
+    <div *ngIf="submitted && rf.confirmPassword2.errors" class="invalid-feedback">
+      <div *ngIf="rf.confirmPassword2.errors.required">
+        Confirm Password is required
+      </div>
+      <div *ngIf="rf.confirmPassword2.errors.mustMatch">Passwords must match</div>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label>Password3</label>
+    <input
+      type="password"
+      formControlName="password3"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.password3.errors }"
+    />
+    <div *ngIf="submitted && rf.password3.errors" class="invalid-feedback">
+      <div *ngIf="rf.password3.errors.required">Password is required</div>
+      <div *ngIf="rf.password3.errors.minlength">
+        Password must be at least 6 characters
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Confirm Password3</label>
+    <input
+      type="password"
+      formControlName="confirmPassword3"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.confirmPassword3.errors }"
+    />
+    <div *ngIf="submitted && rf.confirmPassword3.errors" class="invalid-feedback">
+      <div *ngIf="rf.confirmPassword3.errors.required">
+        Confirm Password is required
+      </div>
+      <div *ngIf="rf.confirmPassword3.errors.mustMatch">Passwords must match</div>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label>Password4</label>
+    <input
+      type="password"
+      formControlName="password4"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.password4.errors }"
+    />
+    <div *ngIf="submitted && rf.password4.errors" class="invalid-feedback">
+      <div *ngIf="rf.password4.errors.required">Password is required</div>
+      <div *ngIf="rf.password4.errors.minlength">
+        Password must be at least 6 characters
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Confirm Password4</label>
+    <input
+      type="password"
+      formControlName="confirmPassword4"
+      class="form-control"
+      [ngClass]="{ 'is-invalid': submitted && rf.confirmPassword4.errors }"
+    />
+    <div *ngIf="submitted && rf.confirmPassword4.errors" class="invalid-feedback">
+      <div *ngIf="rf.confirmPassword4.errors.required">
+        Confirm Password is required
+      </div>
+      <div *ngIf="rf.confirmPassword4.errors.mustMatch">Passwords must match</div>
+    </div>
+  </div>
+
+  <!-- Complete the form to enable button -->
+  <div class="form-group">
+    <button class="btn btn-primary" [disabled]="!registerForm.valid">Register</button>
+  </div>
+</form>
+
+
+
+
+
+
+

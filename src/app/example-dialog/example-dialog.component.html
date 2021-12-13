@@ -1,0 +1,20 @@
+<button mat-raised-button (click)="openDialog()">Pick one</button>
+<br />
+
+<span *ngIf="animal">
+  You choose: <i>{{ animal }}</i> <span></span
+></span>
+<!--  -->
+
+<!-- app.component.html -->
+<mat-form-field>
+  <input
+    matInput
+    [(ngModel)]="sendValue"
+    placeholder="Enter value for Dialog"
+  />
+</mat-form-field>
+<div *ngIf="dialogValue"><b>Value From Dialog</b>: {{ dialogValue }}</div>
+<div>
+  <button mat-raised-button (click)="openDialog2()">Open Dialog</button>
+</div>
